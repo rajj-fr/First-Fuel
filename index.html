@@ -3,1075 +3,519 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#050505">
-  <meta name="description" content="FIRST FUEL — MORE ENERGY. BIGGER YOU. Premium energy drink, 250 ML, ₹189 per can.">
-
-  <title>FIRST FUEL — MORE ENERGY. BIGGER YOU.</title>
+  <title>FIRST FUEL — More Energy. Bigger You.</title>
+  <meta name="description" content="FIRST FUEL — More Energy. Bigger You.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap"
-    rel="stylesheet"
-  >
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- =========================
-       HEADER
-  ========================== -->
-
-  <header class="site-header" id="siteHeader">
-
-    <a
-      class="brand"
-      href="#top"
-      aria-label="FIRST FUEL home"
-    >
-      FIRST FUEL
-    </a>
+  <!-- HEADER -->
+  <header class="site-header">
+    <a href="#" class="brand">FIRST FUEL</a>
 
     <nav class="desktop-nav">
-
-      <a href="#shop">
-        SHOP
-      </a>
-
-      <a href="#why">
-        WHY FIRST FUEL
-      </a>
-
-      <a href="#story">
-        STORY
-      </a>
-
-      <a href="#support">
-        SUPPORT
-      </a>
-
+      <a href="#shop">SHOP</a>
+      <a href="#why">WHY FIRST FUEL</a>
+      <a href="#story">STORY</a>
+      <a href="#support">SUPPORT</a>
     </nav>
 
-    <button
-      class="cart-button"
-      id="cartOpen"
-      type="button"
-      aria-label="Open cart"
-    >
-      BAG
-
-      <span id="cartCount">
-        0
-      </span>
-
+    <button class="cart-button" id="cartOpen">
+      BAG <span id="cartCount">0</span>
     </button>
-
   </header>
 
 
-  <!-- =========================
-       MAIN
-  ========================== -->
+  <!-- HERO TRAILER -->
+  <section class="animation-section trailer-section" id="animationSection">
 
-  <main id="top">
-
-
-    <!-- =========================
-         CINEMATIC HERO TRAILER
-    ========================== -->
-
-    <section
-      class="animation-section trailer-section"
-      id="animationSection"
+    <video
+      class="hero-trailer"
+      id="heroTrailer"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="auto"
+      poster="images/original.jpg.jpeg"
     >
+      <source src="first-fuel-trailer.mp4" type="video/mp4">
+    </video>
 
-      <video
-        class="hero-trailer"
-        id="heroTrailer"
-        autoplay
-        muted
-        loop
-        playsinline
-        preload="auto"
-        poster="images/original.jpg.jpeg"
-        aria-label="FIRST FUEL cinematic trailer"
-      >
+    <div class="trailer-vignette"></div>
 
-        <source
-          src="first-fuel-trailer.mp4"
-          type="video/mp4"
-        >
+    <div class="hero-overlay trailer-overlay" id="heroOverlay">
+      <div class="eyebrow">ENERGY DRINK</div>
+      <h1>FIRST FUEL</h1>
+      <p>MORE ENERGY. BIGGER YOU.</p>
+    </div>
 
-      </video>
+    <div class="trailer-status">
+      <i class="trailer-dot"></i>
+      CINEMATIC FUEL
+    </div>
 
+    <div class="scroll-indicator" id="scrollIndicator">
+      <i></i>
+      SCROLL TO EXPLORE
+      <i></i>
+    </div>
 
-      <div
-        class="trailer-vignette"
-        aria-hidden="true"
-      ></div>
+  </section>
 
 
-      <div
-        class="hero-overlay trailer-overlay"
-        id="heroOverlay"
-      >
+  <!-- INTRO -->
+  <section class="section intro">
 
-        <div class="eyebrow">
-          ENERGY DRINK
-        </div>
-
-        <!--
-          This is the big FIRST FUEL name.
-          JS will fade it out permanently
-          after 30% of the trailer.
-        -->
-
-        <h1 id="heroBrandName">
-          FIRST FUEL
-        </h1>
-
-        <p>
-          MORE ENERGY. BIGGER YOU.
-        </p>
-
-      </div>
-
-
-      <div class="trailer-status">
-
-        <span class="trailer-dot"></span>
-
-        <span>
-          CINEMATIC FUEL
-        </span>
-
-      </div>
-
-
-      <div
-        class="scroll-indicator"
-        id="scrollIndicator"
-      >
-
-        <span>
-          SCROLL TO FUEL UP
-        </span>
-
-        <i></i>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         INTRO
-    ========================== -->
-
-    <section class="intro section">
-
-      <div>
-
-        <p class="eyebrow">
-          BUILT TO MOVE
-        </p>
-
-        <h2>
-          Energy that keeps<br>
-          <em>up with you.</em>
-        </h2>
-
-      </div>
-
-
-      <div class="trust-strip">
-
-        <span>
-          250 ML
-        </span>
-
-        <i></i>
-
-        <span>
-          ₹189 / CAN
-        </span>
-
-        <i></i>
-
-        <span>
-          INDIA DELIVERY
-        </span>
-
-        <i></i>
-
-        <span>
-          COD AVAILABLE
-        </span>
-
-      </div>
-
-
-      <p class="intro-copy">
-
-        FIRST FUEL is a bold, modern energy drink
-        made for long days, hard sessions, late
-        nights and every moment when you decide
-        to go further.
-
-      </p>
-
-    </section>
-
-
-
-    <!-- =========================
-         SHOP
-    ========================== -->
-
-    <section
-      class="shop section"
-      id="shop"
-    >
-
-      <div class="section-head">
-
-        <div>
-
-          <p class="eyebrow">
-            THE FUEL LINEUP
-          </p>
-
-          <h2>
-            Choose your fuel.
-          </h2>
-
-        </div>
-
-        <p>
-          250 ML · ₹189 / CAN
-        </p>
-
-      </div>
-
-
-      <div class="product-grid">
-
-
-        <!-- ORIGINAL -->
-
-        <article
-          class="product-card"
-          data-id="original"
-        >
-
-          <button
-            class="product-image-wrap quick-view"
-            data-product="original"
-            aria-label="Quick view Original"
-          >
-
-            <img
-              src="images/original.jpg.jpeg"
-              alt="FIRST FUEL Original"
-            >
-
-            <span class="card-tag">
-              01
-            </span>
-
-          </button>
-
-
-          <div class="product-info">
-
-            <div>
-
-              <h3>
-                Original
-              </h3>
-
-              <p>
-                Smooth, bold energy with a clean
-                classic taste.
-              </p>
-
-            </div>
-
-
-            <div class="product-buy">
-
-              <strong>
-                ₹189
-              </strong>
-
-              <button
-                class="add-btn"
-                data-add="original"
-              >
-                ADD
-              </button>
-
-            </div>
-
-          </div>
-
-        </article>
-
-
-
-        <!-- SOUR APPLE -->
-
-        <article
-          class="product-card"
-          data-id="sour-apple"
-        >
-
-          <button
-            class="product-image-wrap quick-view"
-            data-product="sour-apple"
-            aria-label="Quick view Sour Apple"
-          >
-
-            <img
-              src="images/sour-apple.jpg.jpeg"
-              alt="FIRST FUEL Sour Apple"
-            >
-
-            <span class="card-tag">
-              02
-            </span>
-
-          </button>
-
-
-          <div class="product-info">
-
-            <div>
-
-              <h3>
-                Sour Apple
-              </h3>
-
-              <p>
-                Crisp green apple flavour with a
-                punchy sour finish.
-              </p>
-
-            </div>
-
-
-            <div class="product-buy">
-
-              <strong>
-                ₹189
-              </strong>
-
-              <button
-                class="add-btn"
-                data-add="sour-apple"
-              >
-                ADD
-              </button>
-
-            </div>
-
-          </div>
-
-        </article>
-
-
-
-        <!-- CITRUS -->
-
-        <article
-          class="product-card"
-          data-id="citrus"
-        >
-
-          <button
-            class="product-image-wrap quick-view"
-            data-product="citrus"
-            aria-label="Quick view Citrus"
-          >
-
-            <img
-              src="images/citrus.jpg.jpeg"
-              alt="FIRST FUEL Citrus"
-            >
-
-            <span class="card-tag">
-              03
-            </span>
-
-          </button>
-
-
-          <div class="product-info">
-
-            <div>
-
-              <h3>
-                Citrus
-              </h3>
-
-              <p>
-                Refreshing citrus burst with a
-                bright, energetic taste.
-              </p>
-
-            </div>
-
-
-            <div class="product-buy">
-
-              <strong>
-                ₹189
-              </strong>
-
-              <button
-                class="add-btn"
-                data-add="citrus"
-              >
-                ADD
-              </button>
-
-            </div>
-
-          </div>
-
-        </article>
-
-
-
-        <!-- WILD BERRY -->
-
-        <article
-          class="product-card"
-          data-id="wild-berry"
-        >
-
-          <button
-            class="product-image-wrap quick-view"
-            data-product="wild-berry"
-            aria-label="Quick view Wild Berry"
-          >
-
-            <img
-              src="images/wild-berry.jpg.jpeg"
-              alt="FIRST FUEL Wild Berry"
-            >
-
-            <span class="card-tag">
-              04
-            </span>
-
-          </button>
-
-
-          <div class="product-info">
-
-            <div>
-
-              <h3>
-                Wild Berry
-              </h3>
-
-              <p>
-                Rich mixed-berry flavour with a
-                sweet-tart finish.
-              </p>
-
-            </div>
-
-
-            <div class="product-buy">
-
-              <strong>
-                ₹189
-              </strong>
-
-              <button
-                class="add-btn"
-                data-add="wild-berry"
-              >
-                ADD
-              </button>
-
-            </div>
-
-          </div>
-
-        </article>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         MANIFESTO
-    ========================== -->
-
-    <section class="manifesto">
-
-      <div class="manifesto-inner">
-
-        <p class="eyebrow">
-          MORE THAN A CAN
-        </p>
-
-        <h2>
-
-          DON'T WAIT<br>
-
-          <span>
-            FOR MOTIVATION.
-          </span>
-
-          <br>
-
-          CREATE IT.
-
-        </h2>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         WHY FIRST FUEL
-    ========================== -->
-
-    <section
-      class="why section"
-      id="why"
-    >
-
-      <div class="section-head">
-
-        <div>
-
-          <p class="eyebrow">
-            THE FIRST FUEL STANDARD
-          </p>
-
-          <h2>
-            Made for the moment.
-          </h2>
-
-        </div>
-
-        <p>
-          Premium by design.
-          Straightforward by intent.
-        </p>
-
-      </div>
-
-
-      <div class="feature-grid">
-
-        <div class="feature">
-
-          <span>
-            01
-          </span>
-
-          <h3>
-            Bold flavour
-          </h3>
-
-          <p>
-            Four distinct flavours designed to
-            keep the lineup exciting.
-          </p>
-
-        </div>
-
-
-        <div class="feature">
-
-          <span>
-            02
-          </span>
-
-          <h3>
-            Everyday format
-          </h3>
-
-          <p>
-            250 ML cans that fit easily into
-            your desk, gym bag or day out.
-          </p>
-
-        </div>
-
-
-        <div class="feature">
-
-          <span>
-            03
-          </span>
-
-          <h3>
-            India shipping
-          </h3>
-
-          <p>
-            Delivery across India in an
-            estimated 4–7 days.
-          </p>
-
-        </div>
-
-
-        <div class="feature">
-
-          <span>
-            04
-          </span>
-
-          <h3>
-            COD available
-          </h3>
-
-          <p>
-            Cash on Delivery is available at
-            eligible delivery locations.
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <p class="demo-note">
-
-        Product specifications, ingredients,
-        nutrition, certifications and health
-        claims are not supplied by the brand yet.
-        Replace this demo copy with verified
-        product data before launch.
-
-      </p>
-
-    </section>
-
-
-
-    <!-- =========================
-         STORY
-    ========================== -->
-
-    <section
-      class="story section"
-      id="story"
-    >
-
-      <div class="story-media">
-
-        <img
-          src="images/original.jpg.jpeg"
-          alt="FIRST FUEL can"
-        >
-
-      </div>
-
-
-      <div class="story-copy">
-
-        <p class="eyebrow">
-          THE STORY
-        </p>
-
-        <h2>
-          FIRST FUEL starts before
-          the first move.
-        </h2>
-
-        <p>
-
-          We built FIRST FUEL around a simple idea:
-          the first step changes the whole day.
-          Whether that first step is a workout,
-          a deadline, a drive, a night out or a
-          personal goal, your fuel should feel as
-          intentional as the moment.
-
-        </p>
-
-        <p>
-          The visual language is minimal.
-          The attitude is not.
-        </p>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         SUPPORT
-    ========================== -->
-
-    <section
-      class="support section"
-      id="support"
-    >
-
-      <div class="section-head">
-
-        <div>
-
-          <p class="eyebrow">
-            HELP CENTER
-          </p>
-
-          <h2>
-            Support, without the runaround.
-          </h2>
-
-        </div>
-
-        <p>
-          Need help with an order?
-          Start here.
-        </p>
-
-      </div>
-
-
-      <div class="support-grid">
-
-
-        <button
-          class="support-card"
-          data-modal="order-support"
-        >
-
-          <span>
-            01
-          </span>
-
-          <h3>
-            Order Support
-          </h3>
-
-          <p>
-            Order ID + email + issue
-          </p>
-
-        </button>
-
-
-        <button
-          class="support-card"
-          data-modal="shipping"
-        >
-
-          <span>
-            02
-          </span>
-
-          <h3>
-            Shipping & Delivery
-          </h3>
-
-          <p>
-            India · 4–7 days
-          </p>
-
-        </button>
-
-
-        <button
-          class="support-card"
-          data-modal="cod"
-        >
-
-          <span>
-            03
-          </span>
-
-          <h3>
-            COD Information
-          </h3>
-
-          <p>
-            Availability & checkout
-          </p>
-
-        </button>
-
-
-        <button
-          class="support-card"
-          data-modal="returns"
-        >
-
-          <span>
-            04
-          </span>
-
-          <h3>
-            Returns & Refunds
-          </h3>
-
-          <p>
-            Policy information
-          </p>
-
-        </button>
-
-
-        <button
-          class="support-card"
-          data-modal="faq"
-        >
-
-          <span>
-            05
-          </span>
-
-          <h3>
-            FAQ
-          </h3>
-
-          <p>
-            Common questions
-          </p>
-
-        </button>
-
-
-        <button
-          class="support-card"
-          data-modal="contact"
-        >
-
-          <span>
-            06
-          </span>
-
-          <h3>
-            Contact Us
-          </h3>
-
-          <p>
-            rajolds7@gmail.com · @newhuuyrr_
-          </p>
-
-        </button>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         FAQ
-    ========================== -->
-
-    <section
-      class="faq section"
-      id="faq"
-    >
-
-      <div class="section-head">
-
-        <div>
-
-          <p class="eyebrow">
-            FAQ
-          </p>
-
-          <h2>
-            Quick answers.
-          </h2>
-
-        </div>
-
-      </div>
-
-
-      <div class="faq-list">
-
-        <details>
-
-          <summary>
-            How much is one can?
-          </summary>
-
-          <p>
-            ₹189 for a 250 ML can.
-            Shipping is calculated separately
-            at checkout.
-          </p>
-
-        </details>
-
-
-        <details>
-
-          <summary>
-            Do you offer Cash on Delivery?
-          </summary>
-
-          <p>
-            Yes, COD is planned for eligible
-            Indian delivery addresses.
-            Final availability should be confirmed
-            by the production checkout.
-          </p>
-
-        </details>
-
-
-        <details>
-
-          <summary>
-            How long does delivery take?
-          </summary>
-
-          <p>
-            Estimated delivery is 4–7 days
-            across India, subject to the delivery
-            address and courier service.
-          </p>
-
-        </details>
-
-
-        <details>
-
-          <summary>
-            Can I change or cancel an order?
-          </summary>
-
-          <p>
-            Contact support as soon as possible
-            with your order ID. Cancellation and
-            refund eligibility depends on order status.
-          </p>
-
-        </details>
-
-
-        <details>
-
-          <summary>
-            Where can I get support?
-          </summary>
-
-          <p>
-            Email rajolds7@gmail.com
-            or Instagram @newhuuyrr_.
-          </p>
-
-        </details>
-
-      </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         FINAL CTA
-    ========================== -->
-
-    <section class="final-cta">
-
-      <p class="eyebrow">
-        YOUR NEXT MOVE
-      </p>
+    <div>
+      <div class="eyebrow">BUILT FOR MOMENTUM</div>
 
       <h2>
-        FUEL UP.<br>
-        MOVE FORWARD.
+        ENERGY FOR<br>
+        THE <em>NEXT LEVEL.</em>
+      </h2>
+    </div>
+
+    <div class="intro-copy">
+      FIRST FUEL is made for people who refuse to run on empty.
+      A bold energy drink designed around movement, focus and
+      the mindset to keep going.
+    </div>
+
+    <div class="trust-strip">
+      <span>250 ML</span>
+      <i></i>
+      <span>₹189 / CAN</span>
+      <i></i>
+      <span>INDIA ONLY</span>
+      <i></i>
+      <span>4–7 DAY DELIVERY</span>
+    </div>
+
+  </section>
+
+
+  <!-- SHOP -->
+  <section class="section shop" id="shop">
+
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">THE LINEUP</div>
+        <h2>CHOOSE<br>YOUR FUEL.</h2>
+      </div>
+
+      <p>
+        FOUR FLAVOURS.<br>
+        ONE ENERGY.
+      </p>
+    </div>
+
+
+    <div class="product-grid">
+
+      <!-- ORIGINAL -->
+      <article class="product-card">
+
+        <button class="product-image-wrap quick-view"
+          data-product="original">
+
+          <span class="card-tag">01 / ORIGINAL</span>
+
+          <img
+            src="images/original.jpg.jpeg"
+            alt="FIRST FUEL Original"
+          >
+
+        </button>
+
+        <div class="product-info">
+
+          <div>
+            <h3>Original</h3>
+            <p>
+              The classic FIRST FUEL hit.
+              Clean, bold and built for momentum.
+            </p>
+          </div>
+
+          <div class="product-buy">
+            <strong>₹189</strong>
+            <button class="add-btn" data-add="original">
+              ADD
+            </button>
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- SOUR APPLE -->
+      <article class="product-card">
+
+        <button class="product-image-wrap quick-view"
+          data-product="sour-apple">
+
+          <span class="card-tag">02 / SOUR APPLE</span>
+
+          <img
+            src="images/sour-apple.jpg.jpeg"
+            alt="FIRST FUEL Sour Apple"
+          >
+
+        </button>
+
+        <div class="product-info">
+
+          <div>
+            <h3>Sour Apple</h3>
+            <p>
+              Sharp, crisp and unapologetically fresh.
+            </p>
+          </div>
+
+          <div class="product-buy">
+            <strong>₹189</strong>
+            <button class="add-btn" data-add="sour-apple">
+              ADD
+            </button>
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- CITRUS -->
+      <article class="product-card">
+
+        <button class="product-image-wrap quick-view"
+          data-product="citrus">
+
+          <span class="card-tag">03 / CITRUS</span>
+
+          <img
+            src="images/citrus.jpg.jpeg"
+            alt="FIRST FUEL Citrus"
+          >
+
+        </button>
+
+        <div class="product-info">
+
+          <div>
+            <h3>Citrus</h3>
+            <p>
+              Bright citrus energy with a clean,
+              refreshing finish.
+            </p>
+          </div>
+
+          <div class="product-buy">
+            <strong>₹189</strong>
+            <button class="add-btn" data-add="citrus">
+              ADD
+            </button>
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- WILD BERRY -->
+      <article class="product-card">
+
+        <button class="product-image-wrap quick-view"
+          data-product="wild-berry">
+
+          <span class="card-tag">04 / WILD BERRY</span>
+
+          <img
+            src="images/wild-berry.jpg.jpeg"
+            alt="FIRST FUEL Wild Berry"
+          >
+
+        </button>
+
+        <div class="product-info">
+
+          <div>
+            <h3>Wild Berry</h3>
+            <p>
+              Deep berry flavour with a bold finish.
+            </p>
+          </div>
+
+          <div class="product-buy">
+            <strong>₹189</strong>
+            <button class="add-btn" data-add="wild-berry">
+              ADD
+            </button>
+          </div>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- MANIFESTO -->
+  <section class="manifesto">
+
+    <div class="manifesto-inner">
+
+      <div class="eyebrow">THE MINDSET</div>
+
+      <h2>
+        DON'T WAIT<br>
+        <span>FOR ENERGY.</span><br>
+        CREATE IT.
       </h2>
 
-      <a
-        class="primary-btn"
-        href="#shop"
+    </div>
+
+  </section>
+
+
+  <!-- WHY -->
+  <section class="section" id="why">
+
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">WHY FIRST FUEL</div>
+        <h2>MADE TO<br>MOVE.</h2>
+      </div>
+
+      <p>
+        DESIGNED FOR<br>
+        EVERYDAY MOMENTUM.
+      </p>
+    </div>
+
+
+    <div class="feature-grid">
+
+      <article class="feature">
+        <span>01</span>
+        <h3>ENERGY</h3>
+        <p>
+          Built around the energy you need
+          when the day demands more.
+        </p>
+      </article>
+
+      <article class="feature">
+        <span>02</span>
+        <h3>FOCUS</h3>
+        <p>
+          A sharp visual identity for a
+          sharp state of mind.
+        </p>
+      </article>
+
+      <article class="feature">
+        <span>03</span>
+        <h3>FLAVOUR</h3>
+        <p>
+          Four distinct flavour directions
+          for different moods.
+        </p>
+      </article>
+
+      <article class="feature">
+        <span>04</span>
+        <h3>MOMENTUM</h3>
+        <p>
+          Made for early starts,
+          long sessions and late finishes.
+        </p>
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- STORY -->
+  <section class="section story" id="story">
+
+    <div class="story-copy">
+
+      <div class="eyebrow">OUR STORY</div>
+
+      <h2>
+        MORE ENERGY.<br>
+        <em>BIGGER YOU.</em>
+      </h2>
+
+      <p>
+        FIRST FUEL was created around one simple idea:
+        your energy should match your ambition.
+      </p>
+
+      <p>
+        Whether you're training, building, creating or
+        simply pushing through another demanding day,
+        FIRST FUEL is made to become part of the momentum.
+      </p>
+
+    </div>
+
+    <div class="story-media">
+      <img
+        src="images/original.jpg.jpeg"
+        alt="FIRST FUEL"
       >
+    </div>
 
-        SHOP FIRST FUEL
-
-        <span>
-          ↗
-        </span>
-
-      </a>
-
-    </section>
-
-  </main>
+  </section>
 
 
+  <!-- SUPPORT -->
+  <section class="section support" id="support">
 
-  <!-- =========================
-       FOOTER
-  ========================== -->
+    <div class="section-head">
 
+      <div>
+        <div class="eyebrow">NEED HELP?</div>
+        <h2>WE'VE GOT<br>YOU.</h2>
+      </div>
+
+    </div>
+
+
+    <div class="support-grid">
+
+      <button class="support-card" data-modal="order-support">
+        <span>01</span>
+        <h3>ORDER SUPPORT</h3>
+        <p>Questions about your order?</p>
+      </button>
+
+      <button class="support-card" data-modal="shipping">
+        <span>02</span>
+        <h3>SHIPPING</h3>
+        <p>India-wide delivery information.</p>
+      </button>
+
+      <button class="support-card" data-modal="cod">
+        <span>03</span>
+        <h3>COD</h3>
+        <p>Cash on Delivery information.</p>
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- FAQ -->
+  <section class="section faq">
+
+    <div class="section-head">
+
+      <div>
+        <div class="eyebrow">QUESTIONS</div>
+        <h2>FAQ.</h2>
+      </div>
+
+    </div>
+
+
+    <div class="faq-list">
+
+      <details>
+        <summary>How much does FIRST FUEL cost?</summary>
+        <p>
+          FIRST FUEL is ₹189 per 250 ML can.
+        </p>
+      </details>
+
+      <details>
+        <summary>Where do you deliver?</summary>
+        <p>
+          FIRST FUEL currently ships within India.
+          Estimated delivery is 4–7 days after dispatch.
+        </p>
+      </details>
+
+      <details>
+        <summary>Is Cash on Delivery available?</summary>
+        <p>
+          COD is planned for eligible Indian delivery
+          locations and should be verified during checkout.
+        </p>
+      </details>
+
+      <details>
+        <summary>How can I contact FIRST FUEL?</summary>
+        <p>
+          Email: rajolds7@gmail.com<br>
+          Instagram: @newhuuyrr_
+        </p>
+      </details>
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA -->
+  <section class="final-cta">
+
+    <div class="eyebrow">YOUR ENERGY. YOUR MOVE.</div>
+
+    <h2>
+      GET<br>
+      FUELED.
+    </h2>
+
+    <a href="#shop" class="primary-btn">
+      SHOP FIRST FUEL
+      <span>↗</span>
+    </a>
+
+  </section>
+
+
+  <!-- FOOTER -->
   <footer class="footer">
 
     <div class="footer-top">
 
       <div>
-
-        <a
-          class="brand footer-brand"
-          href="#top"
-        >
+        <div class="brand footer-brand">
           FIRST FUEL
-        </a>
+        </div>
 
         <p>
           MORE ENERGY. BIGGER YOU.
         </p>
-
       </div>
 
 
       <div class="footer-links">
 
-        <a href="#shop">
-          Shop
-        </a>
+        <a href="#shop">SHOP</a>
+        <a href="#why">WHY FIRST FUEL</a>
+        <a href="#story">STORY</a>
 
-        <a href="#support">
-          Support
-        </a>
-
-        <button data-modal="privacy">
-          Privacy
-        </button>
-
-        <button data-modal="terms">
-          Terms
-        </button>
-
-        <button data-modal="shipping-policy">
-          Shipping
-        </button>
-
-        <button data-modal="refund-policy">
-          Refunds
-        </button>
-
-        <button data-modal="cookies">
-          Cookies
-        </button>
+        <button data-modal="faq">FAQ</button>
+        <button data-modal="contact">CONTACT</button>
+        <button data-modal="shipping-policy">SHIPPING</button>
+        <button data-modal="refund-policy">REFUNDS</button>
+        <button data-modal="privacy">PRIVACY</button>
+        <button data-modal="terms">TERMS</button>
 
       </div>
 
@@ -1085,11 +529,7 @@
       </span>
 
       <span>
-        INDIA ONLY · COD AVAILABLE
-      </span>
-
-      <span>
-        Instagram: @newhuuyrr_
+        INDIA ONLY
       </span>
 
     </div>
@@ -1097,22 +537,10 @@
   </footer>
 
 
+  <!-- MODAL -->
+  <div class="modal-backdrop" id="modalBackdrop">
 
-  <!-- =========================
-       MODAL
-  ========================== -->
-
-  <div
-    class="modal-backdrop"
-    id="modalBackdrop"
-  >
-
-    <div
-      class="modal"
-      role="dialog"
-      aria-modal="true"
-      aria-labelledby="modalTitle"
-    >
+    <div class="modal">
 
       <button
         class="modal-close"
@@ -1122,12 +550,12 @@
         ×
       </button>
 
-      <p
+      <div
         class="eyebrow"
         id="modalEyebrow"
       >
         FIRST FUEL
-      </p>
+      </div>
 
       <h2 id="modalTitle"></h2>
 
@@ -1138,108 +566,60 @@
   </div>
 
 
-
-  <!-- =========================
-       CART DRAWER
-  ========================== -->
-
-  <aside
-    class="cart-drawer"
-    id="cartDrawer"
-    aria-label="Shopping cart"
-  >
+  <!-- CART -->
+  <aside class="cart-drawer" id="cartDrawer">
 
     <div class="cart-head">
 
-      <div>
-
-        <p class="eyebrow">
-          YOUR BAG
-        </p>
-
-        <h2>
-          Checkout
-        </h2>
-
-      </div>
-
       <button
-        id="cartClose"
         class="modal-close"
+        id="cartClose"
       >
         ×
       </button>
+
+      <div class="eyebrow">YOUR BAG</div>
+
+      <h2>FUEL UP.</h2>
 
     </div>
 
 
     <div
-      id="cartItems"
       class="cart-items"
+      id="cartItems"
     ></div>
 
 
     <div class="cart-summary">
 
       <div>
-
-        <span>
-          Subtotal
-        </span>
-
-        <strong id="cartSubtotal">
-          ₹0
-        </strong>
-
+        <span>SUBTOTAL</span>
+        <strong id="cartSubtotal">₹0</strong>
       </div>
-
 
       <div>
-
-        <span>
-          Shipping
-        </span>
-
-        <strong id="cartShipping">
-          —
-        </strong>
-
+        <span>SHIPPING</span>
+        <strong id="cartShipping">—</strong>
       </div>
-
 
       <div class="total">
-
-        <span>
-          Total
-        </span>
-
-        <strong id="cartTotal">
-          ₹0
-        </strong>
-
+        <span>TOTAL</span>
+        <strong id="cartTotal">₹0</strong>
       </div>
-
 
       <button
         class="primary-btn full"
         id="checkoutBtn"
       >
-
         CONTINUE TO CHECKOUT
-
-        <span>
-          ↗
-        </span>
-
+        <span>↗</span>
       </button>
 
-
       <p class="checkout-note">
-
-        Demo checkout UI.
-        Connect a production backend/payment
-        gateway before accepting live orders.
-
+        Demo checkout UI. Connect a production
+        backend/payment gateway before accepting
+        live orders.
       </p>
 
     </div>
@@ -1247,37 +627,14 @@
   </aside>
 
 
-
   <!-- TOAST -->
-
   <div
     class="toast"
     id="toast"
   ></div>
 
 
-
-  <!-- JAVASCRIPT -->
-
   <script src="script.js"></script>
-
-
-  <script>
-
-    const heroTrailer =
-      document.getElementById("heroTrailer");
-
-    if (heroTrailer) {
-
-      heroTrailer.muted = true;
-
-      heroTrailer.playsInline = true;
-
-      heroTrailer.play().catch(() => {});
-
-    }
-
-  </script>
 
 </body>
 </html>
